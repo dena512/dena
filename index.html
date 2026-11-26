@@ -166,7 +166,7 @@
 
     <!-- Tombol musik -->
     <button onclick="toggleMusik()" id="tombolMusik">
-        🔇
+        
     </button>
 
     <!-- YouTube API -->
@@ -187,7 +187,7 @@
 
     <!-- Tombol musik -->
     <button onclick="toggleMusik()" id="tombolMusik">
-        🔇
+        
     </button>
 
     <!-- YouTube API -->
@@ -241,7 +241,7 @@
 
     <!-- Tombol musik -->
     <button onclick="toggleMusik()" id="tombolMusik">
-        🔇
+        
     </button>
 
     <!-- YouTube API -->
@@ -398,39 +398,7 @@
             musikAktif = false;
         }
     }
-    </script>',
-
-            playerVars: {
-                autoplay: 1,
-                loop: 1,
-                playlist: 'uIU3TLi7'
-            },
-
-            events: {
-                onReady: function(event) {
-                    event.target.setVolume(50);
-                }
-            }
-        });
-    }
-
-    // Fungsi tombol musik ON/OFF
-    function toggleMusik() {
-        const tombol = document.getElementById("tombolMusik");
-
-        if (!player) {
-            return;
-        }
-
-        if (!musikAktif) {
-            player.playVideo();
-            tombol.innerHTML = "🔊";
-            musikAktif = true;
-        } else {
-            player.pauseVideo();
-            tombol.innerHTML = "🔇";
-            musikAktif = false;
-        }
+    </script>'    
     }
     </script><!-- Pemutar musik YouTube -->
     <div id="player"></div>
